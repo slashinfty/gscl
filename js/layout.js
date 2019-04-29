@@ -23,6 +23,11 @@ function applyStyle (layoutName, playerCount) {
             $(elementName).css(element.elementName);
         });
     }
+    const currentDetails = currentStyle.details;
+    currentDetails.forEach(element => {
+        const elementName = Object.getOwnPropertyNames(element)[0];
+        $(elementName).css(element.elementName);
+    });
     
     //Hides extra players for the first applied layout
     if (lastPlayerCount === undefined && playerCount != 4) {
@@ -54,7 +59,7 @@ function applyStyle (layoutName, playerCount) {
 //Apply CSS styling common to all layouts
 function initialStyle () {
     const layout = layoutObject.common;
-    common.forEach(element => {
+    layout.forEach(element => {
         const elementName = Object.getOwnPropertyNames(element)[0];
         $(elementName).css(element.elementName);
     });

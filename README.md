@@ -10,7 +10,10 @@ Layouts should be uploaded as .json files in the following format:
       "title": "layoutName",
       "playerX": [ //replace with number
         "element": {multiple-word CSS properties} //add more as necessary
-      ] //add as many players as supported
+      ], //add as many players as supported
+      "details": [
+        "element": {multiple-word CSS properties} //add more as necessary
+      ]
     } //add more as necessary
   ]
 }
