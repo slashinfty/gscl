@@ -15,4 +15,4 @@ Layouts should be uploaded as .json files in the following format:
   ]
 }
 ```
-For more about multiple-word CSS properties, see the [http://api.jquery.com/css/#css-properties](jQuery documentation).
+For more about multiple-word CSS properties, see the [jQuery documentation](http://api.jquery.com/css/#css-properties).
